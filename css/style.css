@@ -1,0 +1,132 @@
+body          
+{ 
+margin: 10px;
+background-image: url('../images/bg.gif'); 
+font-family: 'Trebuchet MS', Verdana, Tahoma
+}
+
+/* Überschriften und Absatz */
+h1            
+{ 
+margin: 0 0 10px 0;
+color: #333;
+padding-bottom: 3px;
+font-size: 30px
+}
+h1 span           
+{ 
+border-bottom: 2px dotted #333
+}
+h2            
+{ 
+margin: 15px 0 0 0;
+color: #FF6600;
+font-size: 18px
+}
+p       
+{ 
+margin: 0 0 10px 0;
+color: #000;
+text-align: justify;
+line-height: 150%;
+font-size: 14px 
+}
+
+/* allgemeine Links im fortlaufenden Text */
+a:link, a:active, a:visited
+{
+text-decoration: underline;
+color: #000
+}
+a:hover
+{
+text-decoration: none;
+color: #FF6600
+}
+
+/* Homepagename Titel */
+#titel        
+{ 
+line-height: 90px;
+border: 1px solid #666;
+background-color: #ccc;
+letter-spacing: 5px;
+font-weight: bold;
+font-size: 48px;
+color: #FF6600;
+text-align: center
+}
+
+/* Formatierung Inhalt */
+#inhalt       
+{ 
+border: 3px solid #999;
+width: 900px;
+padding: 15px;
+background-color: #fff;
+color: #000;
+text-align: justify;
+font-size: 12px 
+}
+#textbereich      
+{ 
+background-color: #f2f2f2;
+margin: 10px 0;
+border: 1px solid #666;
+padding: 5px
+}
+
+/* horizontales Navigationsmenü ganz oben */
+.nav_ob          
+{
+width: 900px;
+margin: 10px 0; 
+font-size: 12px
+}
+.nav_ob a:link, .nav_ob a:active, .nav_ob a:visited
+{ 
+text-decoration: underline;
+margin-right: 5px;
+color: #fff
+}
+.nav_ob a:hover
+{ 
+text-decoration: overline;
+color: #FF6600
+}
+
+/* horizontale Hauptnavigation */
+.nav          
+{
+margin-top: 10px;
+width: 100%; 
+table-layout: fixed;
+font-size: 14px;
+background-color: #ccc;
+border: 1px solid #666
+}
+.nav a:link, .nav a:active, .nav a:visited
+{ 
+display: block;
+line-height: 26px;
+text-decoration: none;
+border: 3px solid #666;
+background-color: #fff;
+text-align: center
+}
+.nav a:hover
+{ 
+text-decoration: none;
+border: 3px solid #FF6600;
+color: #666
+}
+
+/* Footer */
+#fuss         
+{ 
+background-color: #ccc;
+border: 1px solid #666;
+text-align: center;
+font-size: 10px;
+line-height: 45px
+}

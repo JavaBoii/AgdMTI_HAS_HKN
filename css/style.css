@@ -1,6 +1,6 @@
 body {
     margin: 10px;
-    background-image: url('../images/bg.gif');
+    /*background-image: url('../images/bg.gif');*/
     font-family: 'Trebuchet MS', Verdana, Tahoma, serif
 }
 
@@ -24,7 +24,7 @@ h2 {
 
 p {
     margin: 0 0 10px 0;
-    color: #000;
+    color: #000000;
     text-align: justify;
     line-height: 150%;
     font-size: 14px
@@ -44,8 +44,8 @@ a:hover {
 /* Homepagename Titel */
 #titel {
     line-height: 90px;
-    border: 1px solid #666;
-    background-color: #ccc;
+    border: 1px solid #dedede;
+    background-color: #ffffff;
     letter-spacing: 5px;
     font-weight: bold;
     font-size: 48px;
@@ -55,7 +55,7 @@ a:hover {
 
 /* Formatierung Inhalt */
 #inhalt {
-    border: 3px solid #999;
+    border: 3px solid #ffffff;
     width: 900px;
     padding: 15px;
     background-color: #fff;
@@ -67,7 +67,7 @@ a:hover {
 #textbereich {
     background-color: #f2f2f2;
     margin: 10px 0;
-    border: 1px solid #666;
+    border: 0px solid #666;
     padding: 5px
 }
 
@@ -94,30 +94,33 @@ a:hover {
     margin-top: 10px;
     width: 100%;
     table-layout: fixed;
-    font-size: 14px;
-    background-color: #ccc;
-    border: 1px solid #666
+    font-size: 19px;
+    background-color: #ffffff; /*Farben Umrandung Navbar*/
+    border: 2px solid rgb(162, 162, 162)
 }
 
 .nav a:link, .nav a:active, .nav a:visited {
     display: block;
     line-height: 26px;
     text-decoration: none;
-    border: 3px solid #666;
-    background-color: #fff;
+    /*border: 3px solid #ffffff;*/
+    background-color: #ffffff;
     text-align: center
 }
 
 .nav a:hover {
+    background-color:#ffffff ;
     text-decoration: none;
-    border: 3px solid #FF6600;
-    color: #666
+    border: 0px solid #00A0FF;
+    color: #00A0FF
+    
+
 }
 
 /* Footer */
 #fuss {
-    background-color: #ccc;
-    border: 1px solid #666;
+    background-color: #fcfcfc;
+    border: 1px solid #dedede;
     text-align: center;
     font-size: 10px;
     line-height: 45px

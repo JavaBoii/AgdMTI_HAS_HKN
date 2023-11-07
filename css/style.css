@@ -4,7 +4,7 @@ body {
     font-family: 'Trebuchet MS', Verdana, Tahoma, serif
 }
 
-/* Überschriften und Absatz */
+/* ï¿½berschriften und Absatz */
 h1 {
     margin: 0 0 10px 0;
     color: #333;
@@ -18,7 +18,7 @@ h1 span {
 
 h2 {
     margin: 15px 0 0 0;
-    color: #FF6600;
+    color: #00A0FF(240, 100%, 50%);
     font-size: 18px
 }
 
@@ -38,7 +38,7 @@ a:link, a:active, a:visited {
 
 a:hover {
     text-decoration: none;
-    color: #FF6600
+    color: #00A0FF
 }
 
 /* Homepagename Titel */
@@ -49,7 +49,7 @@ a:hover {
     letter-spacing: 5px;
     font-weight: bold;
     font-size: 48px;
-    color: #FF6600;
+    color: #00A0FF;
     text-align: center
 }
 
@@ -71,7 +71,7 @@ a:hover {
     padding: 5px
 }
 
-/* horizontales Navigationsmenü ganz oben */
+/* horizontales Navigationsmenï¿½ ganz oben */
 .nav_ob {
     width: 900px;
     margin: 10px 0;
@@ -86,7 +86,7 @@ a:hover {
 
 .nav_ob a:hover {
     text-decoration: overline;
-    color: #FF6600
+    color: #00A0FF
 }
 
 /* horizontale Hauptnavigation */

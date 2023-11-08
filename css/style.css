@@ -1,136 +1,208 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    margin: 50px;
-    background-image: url('../images/bg.jpg');
-    font-family: 'Trebuchet MS', Verdana, Tahoma, serif
-}
-
-/* �berschriften und Absatz */
-h1 {
-    margin: 0 0 10px 0;
+    font-family: 'Trebuchet MS', Verdana, Tahoma, serif;
+    line-height: 1.6;
+    background: #f5f5f5 url('../images/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: #333;
-    padding-bottom: 3px;
-    font-size: 30px
 }
 
-h1 span {
-    border-bottom: 2px dotted #333
+/* h1 to h6 and p elements share a common padding */
+h1, h2, h3, h4, h5, h6, p {
+    padding: 15px;
 }
 
-h2 {
-    margin: 15px 0 0 0;
-    color: #00A0FF(240, 100%, 50%);
-    font-size: 18px
-}
-
-p {
-    margin: 0 0 10px 0;
-    color: #000000;
-    text-align: justify;
-    line-height: 150%;
-    font-size: 14px
-}
-
-/* allgemeine Links im fortlaufenden Text */
-a:link, a:active, a:visited {
-    text-decoration: underline;
-    color: #000
-}
-
-a:hover {
-    text-decoration: none;
-    color: #00A0FF
-}
-
-/* Homepagename Titel */
-#titel {
-    line-height: 90px;
-    border: 1px solid #dedede;
-    background-color: #ffffff;
-    background-image: url('../images/logo.jpg');
-    background-size: 330px;
-    background-position-x:center;
-    background-position: 1,5cm;
-    background-repeat: no-repeat;
-    letter-spacing: 5px;
+/* Logo placeholder styles */
+.logo {
+    font-size: 24px;
     font-weight: bold;
-    font-size: 48px;
-    color: #00A0FF;
-    text-align:center  
+    color: #333;
+    padding: 0.5rem 0;
+    text-align: center;
 }
 
-/* Formatierung Inhalt */
-#inhalt {
-    border: 3px solid #ffffff;
-    width: 900px;
+/* ==============================
+   NAVIGATION AND FOOTER STYLES
+   ============================== */
+
+nav, footer {
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 1rem 0;
+}
+
+nav a, footer a {
+    color: white;
+    text-decoration: none;
+    padding: 0 2rem;
+}
+
+nav a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+}
+
+/* ==============================
+   MAIN CONTENT AND SECTIONS
+   ============================== */
+
+main {
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+}
+
+section {
     padding: 15px;
     background-color: #fff;
-    color: #000;
-    text-align: justify;
-    font-size: 12px
+    max-width: 900px;
+    margin: auto;
 }
 
-#textbereich {
-    background-color: #f2f2f2;
-    margin: 10px 0;
-    border: 0px solid #666;
-    padding: 5px
+/* ==============================
+   ARTICLE STYLES
+   ============================== */
+
+.article-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-/* horizontales Navigationsmen� ganz oben */
-.nav_ob {
-    width: 900px;
-    margin: 10px 0;
-    font-size: 12px
-}
-
-.nav_ob a:link, .nav_ob a:active, .nav_ob a:visited {
-    text-decoration: underline;
-    margin-right: 5px;
-    color: #fff
-}
-
-.nav_ob a:hover {
-    text-decoration: overline;
-    color: #00A0FF
-}
-
-/* horizontale Hauptnavigation */
-.nav {
-    margin-top: 10px;
+.article, .article-container article {
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    max-width: 250px;
     width: 100%;
-    table-layout: fixed;
-    font-size: 19px;
-    background-color: #ffffff; /*Farben Umrandung Navbar*/
-    border: 2px solid rgb(162, 162, 162)
 }
 
-.nav a:link,  .nav a:visited {
+.article img, article img {
+    max-width: 100%;
+    height: auto;
     display: block;
-    line-height: 26px;
-    text-decoration: none;
-    /*border: 3px solid #ffffff;*/
-    background-color: #ffffff;
-    text-align: center
 }
-.nav a.active{
-    background-color: #04AA6D;
+
+.article figure{
+    width: 250px;
+    height: 100px;
+}
+
+.article p {
+    height: 100px;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+article {
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 0 calc(50% - 15px);
+
+    margin-bottom: 15px;
+}
+
+/* ==============================
+   RESPONSIVE STYLES
+   ============================== */
+
+@media (min-width: 769px) {
+    .article-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .article {
+        flex: 0 0 250px;
+    }
+
+    .article img {
+        max-height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 0.5rem 0;
+    }
+
+    .logo {
+        display: block;
+    }
+
+    .article-container {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .article-container article {
+        width: 80%;
+        margin-right: 15px;
+    }
+
+    .article-container .article img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .article {
+        flex: 0 0 250px;
+        margin-right: 15px;
+    }
+}
+
+/* ==============================
+   COMPONENT STYLES - BUTTONS
+   ============================== */
+
+.article footer a {
+    display: block;
+    padding: 5px 0;
+    background-color: #007bff;
     color: white;
-  }
-
-.nav a:hover {
-    background-color:#ffffff ;
     text-decoration: none;
-    border: 0px solid #00A0FF;
-    color: #00A0FF
-    
-
-}
-
-/* Footer */
-#fuss {
-    background-color: #fcfcfc;
-    border: 1px solid #dedede;
     text-align: center;
-    font-size: 10px;
-    line-height: 45px
+    transition: background-color 0.3s;
+    width: 100%;
+    box-sizing: border-box;
 }
+
+.article footer a:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
+.article footer {
+    padding: 0;
+}
+
+
+

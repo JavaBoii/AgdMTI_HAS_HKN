@@ -1,6 +1,6 @@
 body {
-    margin: 10px;
-    /*background-image: url('../images/bg.gif');*/
+    margin: 50px;
+    background-image: url('../images/bg.jpg');
     font-family: 'Trebuchet MS', Verdana, Tahoma, serif
 }
 
@@ -46,11 +46,16 @@ a:hover {
     line-height: 90px;
     border: 1px solid #dedede;
     background-color: #ffffff;
+    background-image: url('../images/logo.jpg');
+    background-size: 330px;
+    background-position-x:center;
+    background-position: 1,5cm;
+    background-repeat: no-repeat;
     letter-spacing: 5px;
     font-weight: bold;
     font-size: 48px;
     color: #00A0FF;
-    text-align: center
+    text-align: right
 }
 
 /* Formatierung Inhalt */

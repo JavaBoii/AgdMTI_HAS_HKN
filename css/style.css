@@ -55,7 +55,7 @@ a:hover {
     font-weight: bold;
     font-size: 48px;
     color: #00A0FF;
-    text-align: right
+    text-align: right   
 }
 
 /* Formatierung Inhalt */
@@ -104,7 +104,7 @@ a:hover {
     border: 2px solid rgb(162, 162, 162)
 }
 
-.nav a:link, .nav a:active, .nav a:visited {
+.nav a:link,  .nav a:visited {
     display: block;
     line-height: 26px;
     text-decoration: none;
@@ -112,6 +112,10 @@ a:hover {
     background-color: #ffffff;
     text-align: center
 }
+.nav a.active{
+    background-color: #04AA6D;
+    color: white;
+  }
 
 .nav a:hover {
     background-color:#ffffff ;

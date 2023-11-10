@@ -10,10 +10,72 @@
     margin: 0 auto;
 }
 
+#contact {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact label {
+    margin-bottom: 5px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+#contact .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#contact .checkbox-container input {
+    margin-right: 10px;
+}
+
+#contact button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact button:hover {
+    background-color: #0056b3;
+}
+
+#contact button[type="reset"] {
+    background-color: #6c757d;
+}
+
+#contact button[type="reset"]:hover {
+    background-color: #5a6268;
+}
+
 /* Responsive Stile für das Video */
 @media (max-width: 768px) {
     .video-container iframe {
         width: 100%;
         height: auto;
+    }
+
+    #contact form {
+        width: 90%;
     }
 }

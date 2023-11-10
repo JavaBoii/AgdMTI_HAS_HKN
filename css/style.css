@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +16,9 @@ body {
 
 /* h1 to h6 and p elements share a common padding */
 h1 {
-    font-family: '', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Für ein fetteres Schriftbild, falls gewünscht */
+    padding: 15px;
 }
 
 h2, h3, h4, h5, h6, p {

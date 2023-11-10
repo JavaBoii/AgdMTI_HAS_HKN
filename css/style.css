@@ -13,7 +13,11 @@ body {
 }
 
 /* h1 to h6 and p elements share a common padding */
-h1, h2, h3, h4, h5, h6, p {
+h1 {
+    font-family: '', cursive;
+}
+
+h2, h3, h4, h5, h6, p {
     padding: 15px;
 }
 

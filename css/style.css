@@ -14,10 +14,9 @@ body {
     color: #333;
 }
 
-/* h1 to h6 and p elements share a common padding */
 h1 {
     font-family: 'Roboto', sans-serif;
-    font-weight: 700; /* Für ein fetteres Schriftbild, falls gewünscht */
+    font-weight: 700;
     padding: 15px;
 }
 
@@ -101,15 +100,23 @@ section {
 .article, .article-container article {
     box-sizing: border-box;
     margin-bottom: 15px;
-    max-width: 250px;
-    width: 100%;
+    width: calc(33.333% - 10px);
+    display: flex;
+    flex-direction: column;
 }
 
-.article img, article img {
-    max-width: 100%;
+article img {
+    width: 100%;
     height: auto;
+}
+
+.article img {
+    width: 250px;
+    max-width: 100%;
+    height: 100px;
     display: block;
 }
+
 
 .article figure{
     width: 250px;
@@ -120,6 +127,12 @@ section {
     height: 100px;
     overflow-x: hidden;
     scrollbar-width: none;
+}
+
+.article h2, .article p {
+    word-wrap: break-word;
+    text-align: center;
+    width: 100%;
 }
 
 article {

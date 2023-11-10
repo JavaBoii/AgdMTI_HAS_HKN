@@ -5,7 +5,7 @@ table {
   }
   
   td, th {
-    border: 0px solid #dddddd;
+    border: 0 solid #dddddd;
     text-align: left;
     padding: 8px;
   }
@@ -13,3 +13,16 @@ table {
   tr:nth-child(even) {
     background-color: #dddddd;
   }
+
+.orderButton {
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}

@@ -94,13 +94,12 @@ figcaption {
     }
 }
 
-/* Adjust the last gallery item if it's the only one or the last of an odd number */
+
 .galleryList li:last-child:only-child,
 .galleryList li:nth-last-child(1):nth-child(odd) {
-    grid-column: 1 / -1; /* Take full width */
+    grid-column: 1 / -1;
 }
 
-/* Make sure the image within stretches to cover the available space */
 .galleryList li:last-child:only-child .galleryImg,
 .galleryList li:nth-last-child(1):nth-child(odd) .galleryImg {
     width: 100%;

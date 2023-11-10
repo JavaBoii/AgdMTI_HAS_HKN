@@ -10,8 +10,6 @@
     margin: 0 auto;
 }
 
-
-/* Responsive Stile für das Video */
 @media (max-width: 768px) {
     .video-container iframe {
         width: 100%;
